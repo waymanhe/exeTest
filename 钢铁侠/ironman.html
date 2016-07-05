@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>IRONMAN</title>
+	<style type="text/css">
+	body{transform-style:preserve-3d;
+		perspective:1000px;
+		background: black;}
+	*{margin: 0px;padding: 0px;}
+	.wrap{	width: 200px;
+			height: 300px;
+			/*border: 1px solid gray;*/
+			position: relative;
+			top: 500px;
+			left: 50%;
+			margin: 300px 0 0 -100px;
+			transform:rotateY(0deg) rotateX(-28deg);
+			transform-style:preserve-3d;
+			perspective:10000px;
+			animation:move10 5s linear 8s infinite both;
+			opacity: 0.9;}
+	.wrap:hover{animation-play-state:paused;}
+	.wrap:hover div{/*animation-play-state:paused;*/}
+
+	.wrap div{	width: 200px;
+				height: 300px;
+				border: 1px solid gray;
+				position: absolute;
+				-webkit-box-reflect:below 20px -webkit-linear-gradient(top,rgba(0,0,0,0),rgba(0,0,0,0.5));}
+	.wrap div:nth-child(3n+1){
+		background: url(images/01.jpg);}
+	.wrap div:nth-child(3n+2){
+		background: url(images/02.jpg);}
+	.wrap div:nth-child(3n+3){
+		background: url(images/03.jpg);}	
+	.wrap div:nth-child(1){animation:move1 .3s linear forwards;}
+	.wrap div:nth-child(2){animation:move2 .3s linear 0.3s forwards;}
+	.wrap div:nth-child(3){animation:move3 .3s linear 0.6s forwards;}
+	.wrap div:nth-child(4){animation:move4 .3s linear 0.9s forwards;}
+	.wrap div:nth-child(5){animation:move5 .3s linear 1.2s forwards;}
+	.wrap div:nth-child(6){animation:move6 .3s linear 1.5s forwards;}
+	.wrap div:nth-child(7){animation:move7 .3s linear 1.8s forwards;}
+	.wrap div:nth-child(8){animation:move8 .3s linear 2.1s forwards;}
+	.wrap div:nth-child(9){animation:move9 .3s linear 2.4s forwards;}
+	.wrap div:nth-child(10){animation:move11 .3s linear 2.7s forwards;} /*旋转*/
+	.wrap div:nth-child(11){animation:move12 .3s linear 3s forwards;}
+	.wrap div:nth-child(12){animation:move13 .3s linear 3.3s forwards;}
+	.wrap div:nth-child(13){animation:move14 .3s linear 3.6s forwards;}
+	.wrap div:nth-child(14){animation:move15 .3s linear 3.9s forwards;}
+	.wrap div:nth-child(15){animation:move16 .3s linear 4.2s forwards;}
+	.wrap div:nth-child(16){animation:move17 .3s linear 4.5s forwards;}
+	.wrap div:nth-child(17){animation:move18 .3s linear 4.8s forwards;}
+	.wrap div:nth-child(18){animation:move19 .3s linear 5.1s forwards;}
+	.wrap div:nth-child(19){animation:move20 .3s linear 5.4s forwards;}
+	.wrap div:nth-child(20){animation:move21 .3s linear 5.7s forwards;}
+	.wrap div:nth-child(21){animation:move22 .3s linear 6s forwards;}
+	.wrap div:nth-child(22){animation:move23 .3s linear 6.3s forwards;}
+	.wrap div:nth-child(23){animation:move24 .3s linear 6.6s forwards;}
+	.wrap div:nth-child(24){animation:move25 .3s linear 6.9s forwards;}
+	.wrap div:nth-child(25){animation:move26 .3s linear 7.2s forwards;}
+	.wrap div:nth-child(26){animation:move27 .3s linear 7.5s forwards;}
+	.wrap div:nth-child(27){animation:move28 .3s linear 7.8s forwards;}
+
+	
+	@keyframes move1{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(0deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}	
+	@keyframes move2{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(40deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}	
+	@keyframes move3{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(80deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move4{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(120deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move5{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(160deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move6{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(200deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move7{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(240deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move8{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(280deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move9{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform:rotateY(320deg) translate3d(0px,0px,400px);box-reflect:below 20px;}
+	}
+	@keyframes move10{
+		from{transform:rotateY(0deg) rotateX(0deg) translate3d(0px,0px,0);}
+		25%{transform:rotateY(360deg) rotateX(360deg) translate3d(0px,0px,0)}
+		50%{transform:rotateY(0deg) rotateX(0deg) translate3d(500px,500px,200px); }
+		to{transform:rotateY(360deg) rotateX(360deg) translate3d(0px,0px,0); }
+	}
+	@keyframes move11{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move12{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(40deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move13{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(80deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move14{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(120deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move15{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(160deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move16{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(200deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move17{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(240deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move18{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(280deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move19{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(320deg) rotateX(200deg) translateY(175px) translateZ(-430px);}
+	}
+	@keyframes move20{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move21{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(40deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move22{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(80deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move23{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(120deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move24{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(160deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move25{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(200deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	@keyframes move26{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(240deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}@keyframes move27{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(280deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}@keyframes move28{
+		from{transform:rotateY(0deg) translate3d(0px,0px,0px);}
+		to{transform: rotateY(320deg) rotateX(-20deg) translateY(175px) translateZ(430px);}
+	}
+	}@keyframes move29{
+		from{transform:rotateY(360deg) rotateX(360deg);}
+		to{background: red;}
+	}
+
+	
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div><!-- 9 -->
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div><!-- 9 -->
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
