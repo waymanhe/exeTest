@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;}
+	#main{
+		position: absolute;
+		width: 320px;
+		height: 480px;
+	}
+	#cover{
+		width: 320px;
+		height: 480px;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+	}
+	#cover img:nth-child(2){
+		width: 275px;
+		height: 79px;
+		position: absolute;
+		top: 40%;
+		left: 16px;
+
+	}
+	#content{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	#ep{
+		width: 166px;
+		height: 195px;
+		position: absolute;
+		top: 255px;
+		left: -10px;
+	}
+	#num{
+		position: absolute;
+		left: 160px;
+		top: 280px;
+		width: 155px;
+		height: 85px;
+		background: url(images/watermelon_dialog.png) center no-repeat;
+	}
+	#num span{
+		color: yellow;
+		font-size: 30px;
+		line-height: 85px;
+		margin: 0 0 0 80px;
+	}
+	#menu{
+		width: 90%;
+		height: 30px;
+		position: absolute;
+		top: 440px;
+		left: 10px;
+		
+	}
+	#done{
+		cursor: pointer;
+		float: left;
+	}
+	#back{
+		cursor: pointer;
+		float: right;
+		margin: 10px 0 0 0;
+	}
+	#basket{
+		position: absolute;
+		top: 355px;
+		left: 140px;
+	}
+	#wm img{
+		display: block;
+		/*border: 5px solid black;
+		border-radius: 50px;*/
+		width: 70px;
+		height: 70px;
+		cursor: pointer;
+	}
+	#wm img:nth-child(1){
+		position: absolute;
+		top: 10px;
+		left: 190px;
+	}
+	#wm img:nth-child(2){
+		position: absolute;
+		top: 40px;
+		left: 260px;
+	}
+	#wm img:nth-child(3){
+		position: absolute;
+		top: 30px;
+		left: 40px;
+	}
+	#wm img:nth-child(4){
+		position: absolute;
+		top: 65px;
+		left: 115px;
+	}
+	#wm img:nth-child(5){
+		position: absolute;
+		top: 90px;
+		left: 185px;
+	}
+	#wm img:nth-child(6){
+		position: absolute;
+		top: 125px;
+		left: 255px;
+	}
+	#wm img:nth-child(7){
+		position: absolute;
+		top: 125px;
+		left: 35px;
+	}
+	#wm img:nth-child(8){
+		position: absolute;
+		top: 150px;
+		left: 110px;
+	}
+	#wm img:nth-child(9){
+		position: absolute;
+		top: 190px;
+		left: 180px;
+	}
+	#finish{
+		display: none;
+		position: absolute;
+		top: 100px;
+		left: 0px;
+	}
+	#btn{
+		position: absolute;
+		top: 90px;
+		left: 180px;
+		cursor: pointer;
+	}
+	#number{
+		position: absolute;
+		top: 380px;
+		left: 205px;
+	}
+	</style>
+</head>
+<body>
+	
+	<div id="main">
+		<div id="cover">
+			<img src="images/about_bg.png" alt="">
+			<img id="start" src="images/melon.png" alt="">
+		</div>
+		<div id="content">
+			<img id="bk" src="images/watermelon_bg.png" alt="">
+			<div id="epl">
+				<img id="ep" src="images/elephent1.png" alt="">
+				<div id="num">
+					<span></span>
+				</div>
+			</div>
+			
+			<div id="menu">
+				<img id="done" src="images/done1.png" alt="">
+				<img id="back" src="images/back1.png" alt="">
+			</div>
+			<div id="bask">
+				<img id="basket" src="images/bascket_w.png" alt="">
+				<img id="number" src="">
+			</div>
+			<div id="wm">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+				<img src="images/icon.png" alt="">
+			</div>
+			<div id="finish">
+				<img src="images/wrong-bg.png" alt="">
+				<img id="btn" src="images/try again 1.png" alt="">
+			</div>
+
+		</div>
+	</div>
+	<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
