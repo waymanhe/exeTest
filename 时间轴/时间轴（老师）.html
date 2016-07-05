@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;list-style: none;}
+	body{
+		background: #f1f1ef;
+	}
+	#main{
+		width: 940px;
+		margin: 0 auto;
+	}
+	#year{
+		width: 60px;
+		background: white;
+		float: left;
+	}
+	#year li{
+		text-align: center;
+		width: 60px;
+		line-height: 40px;
+		color: gray;
+		cursor: pointer;
+		border-bottom:1px solid lightgray;
+		position: relative;
+	}
+	#year li.selected{
+		background-color:#0066ff;
+		color: white; 
+	}
+	#year li.selected span{
+		position: absolute;
+		left: 60px;
+		top:0;
+		width: 10px;
+		height: 40px;
+		background: url(img/jian.png) 0px 0px no-repeat;
+	}
+	#timelines{
+		width: 860px;
+		float: right;
+		background: url(img/dian3.png) 140px 0 repeat-y;
+	}
+	#timelines h3{
+		font-size: 25px;
+		color: #0066ff;
+		line-height: 42px;
+		font-style: italic;
+		font-family: "Georgia";
+		padding: 0 0 0 160px;
+		background: url(img/jian.png) 133px -41px no-repeat;
+	}
+	#timelines li{
+		overflow: hidden;
+		margin: 0 0 2px 0;
+		background: url(img/jian.png) 137px -80px no-repeat;
+	}
+	#timelines li span{
+		float: left;
+		line-height: 40px;
+		width: 127px;
+		text-align: right;
+	}
+	#timelines li div{
+		background: url('img/jian.png') -22px 0 no-repeat;
+		margin: 0 0 0 0;
+		float: right;
+		width: 680px;
+		line-height: 42px;
+		background-color:white; 
+		padding: 0 0 0 20px;
+		/*border-bottom: 2px lightgray solid; 
+		border-right: 2px lightgray solid; */
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<ul id="year">
+			<li class="selected">2016<span></span></li>
+			<li>2015<span></span></li>
+			<li>2014<span></span></li>
+		</ul>
+		<ul id="timelines">
+			<div>
+				<h3>2016</h3>
+				<li>
+					<span>5月</span>
+					<div>文字信息</div>
+				</li>
+				<li>
+					<span>4月</span>
+					<div>文字信息</div>
+				</li>
+				<li>
+					<span>3月</span>
+					<div>文字信息</div>
+				</li>
+			</div>
+			<div>
+				<h3>2015</h3>
+				<li>
+					<span>5月</span>
+					<div>文字信息</div>
+				</li>
+			</div>
+			<div>
+				<h3>2014</h3>
+				<li>
+					<span>5月</span>
+					<div>文字信息</div>
+				</li>
+				<li>
+					<span>5月</span>
+					<div>文字信息</div>
+				</li>
+				<li>
+					<span>5月</span>
+					<div>文字信息</div>
+				</li>
+			</div>
+		</ul>
+
+	</div>
+	<script type="text/javascript" src="jquery-1.11.2.js"></script>
+	<script type="text/javascript">
+		$("#year").children().click(function(event) {
+			// if (!$(this).hasClass('selected')) {
+			// 	$(this).addClass('selected').siblings().removeClass("selected");
+			// };
+			if ($(this).hasClass("selected")) {
+			}else{
+				$(this).addClass('selected').siblings().removeClass("selected");
+			}
+			var year = $(this).text();
+			var h3 =$('#timelines h3:contains('+year+')');
+			h3.parent().prevAll().slideUp(600).end().slideDown(600).nextAll().slideDown(600);
+		});
+	</script>
+</body>
+</html>
