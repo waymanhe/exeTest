@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{
+		margin:0;
+		padding: 0;
+	}
+	#main{
+		width: 470px;
+		margin:0px auto;
+		background-color: #f5f5f5;
+		border: 1px lightgray solid;
+	}
+	#box{
+		padding: 10px;
+	}
+	#box input{
+		width: 80%;
+		margin-left:5px; 
+		margin-bottom: 10px;
+	}
+	#box span{
+		vertical-align: top;
+	}
+	#box textarea{
+		width: 80%;
+		margin-left:5px;
+		vertical-align: top;
+	}
+	#box #send{
+		width: 100px;
+		height: 30px;
+		margin-top: 10px;
+		position: relative;
+		left:40px;
+	}
+	ul li{
+		list-style: none;
+		margin:10px;
+		overflow: hidden;
+		/*border: 1px red solid;*/
+	}
+	li h3{
+		background-color: #CCC;
+		border-bottom: 1px gray solid;
+		padding: 10px;
+	}
+	li div{
+		background-color: white;
+		border-bottom: 1px lightgray solid;
+		padding: 15px;
+		text-indent: 2em;
+	}
+	div a{
+		float: right;
+	}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="box">
+			标题:<input id='title' type="text" />
+			<br>
+			<span>内容:</span><textarea name="" id="content" cols="30" rows="10"></textarea>
+			<br>
+			<input id='send' type="submit" value='提交'/>
+		</div>
+		<div id="msg">
+			<h2>显示留言</h2>
+			<ul id='list'>
+			</ul>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var oTitle = document.getElementById('title');
+		var oContent = document.getElementById('content');
+		var oSend = document.getElementById('send');
+		var oMsg = document.getElementById('msg');
+		var oList = document.getElementById('list');
+		oSend.onclick = function(){
+			if (oTitle.value.length == 0 || oContent.value.length==0) {
+				alert('信息不能为空');
+				return;
+			}
+			// <li>
+			// 		<h3>dddd</h3>
+			// 		<div>大大大 <a href="">删除</a></div>
+			// 	</li>
+			var li = document.createElement('li');
+			var h3 = document.createElement('h3');
+			h3.innerHTML = oTitle.value;
+
+			var div = document.createElement('div');
+			var t = document.createTextNode(oContent.value);
+			div.appendChild(t);
+			var a = document.createElement('a');
+			a.setAttribute('href','#');
+			a.innerHTML = '删除';
+			a.onclick = function(){
+				var oLi = this.parentNode.parentNode;
+				//oList.removeChild(oLi);
+
+				var step = 0;
+				var maxstep = 30;
+				var start = oLi.offsetHeight;
+				var end = 0;
+				var change = -start;
+				oLi.style.height = Tween.Bounce.easeOut(step,start,change,maxstep)+'px';
+				//console.log(oLi.style.height);
+				oLi.timer = setInterval(function(){
+					step++;
+					if(step>=maxstep){
+						oList.removeChild(oLi);
+						clearInterval(oLi.timer);
+					}
+					oLi.style.height = Tween.Bounce.easeOut(step,start,change,maxstep)+'px';
+
+				},30);
+			}
+
+			div.appendChild(a);
+
+			li.appendChild(h3);
+			li.appendChild(div);
+
+			//console.log(li);
+			oList.appendChild(li);
+			// animation
+			//tween.js
+			var step = 0;
+			var maxstep = 30;
+			var start = 0;
+			// 获取Dom元素的高度
+			var end = li.offsetHeight;
+			//console.log(end);
+			var change = end - start;
+			li.style.height = Tween.Bounce.easeInOut(step,start,change,maxstep)+'px';
+			li.timer = setInterval(function(){
+				step++;
+				if (step >= maxstep) {
+					clearInterval(li.timer);
+				}
+				li.style.height = Tween.Bounce.easeOut(step,start,change,maxstep)+'px';
+				console.log(Tween.Bounce.easeOut(step,start,change,maxstep)+"px");
+			},30);
+		}
+	</script>
+</body>
+</html>

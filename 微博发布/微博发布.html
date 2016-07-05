@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0;
+		word-wrap:break-word;}
+	#wrap{
+		padding: 0 0 15px 0;
+		width: 500px;
+		min-height: 500px;
+		background: gray;
+		position: relative;
+		top: 50px;
+		left: 25%;
+
+	}
+	#head{
+		width: 100%;
+		height: 100px;
+		/*position: absolute;
+		top: 0px;
+		left: 0px;*/
+	}
+	#wrap span{
+		display: inline-block;
+		color: white;
+		margin: 24px 0 0 15px;
+	}
+	#head input{
+		position: absolute;
+		top: 20px;
+		left: 55px;
+		width: 80%;
+		/*background: white;*/
+		font-size: 20px;
+	}
+	#content{
+		width: 100%;
+		height: 190px;
+/*		position: absolute;
+		top: 50px;
+		left: 0px;*/
+	}
+	#content textarea{
+		position: absolute;
+		top: 55px;
+		left: 55px;
+		width: 80%;
+		font-size: 20px;
+	}
+	#btn{
+
+		height: 20px;
+	}
+	#btn input{
+		position: absolute;
+		left: 55px;
+		top: 290px;
+		width: 50px;
+		height: 20px;
+
+	}
+	.fz{
+		
+		color: white;
+		font-size: 25px;
+		margin: 5px 0 0 15px;
+	}
+	.mes{
+		margin: 15px 0 15px 55px;
+		width: 80%;
+		/*min-height: 90px*/;
+		overflow: hidden;
+	}
+	.gray{
+		height: 40px;
+		background: #c3cdcf;
+		line-height: 40px;
+		text-indent: 6px;
+	}
+	.white{
+		min-height: 40px;
+		text-indent: 26px;
+		background: white;
+		line-height: 40px;
+	}
+	.a{	float: right;
+		cursor: pointer;
+		color: blue;
+		margin: 40px 20px 0 0;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="head">
+			<span>姓名</span>
+			<input type="text"></input>
+		</div>
+		<div id="content">
+			<span>内容</span>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+		</div>
+		<div id="btn">
+			<input type="button" value="提交">
+		</div>
+		<div class="fz">显示内容</div>
+	</div>
+	<script type="text/javascript" src="tween.js"></script>
+	<script type="text/javascript">
+
+		var wrap =document.getElementById("wrap");
+		var head =document.getElementById("head");
+		var content = document.getElementById("content");
+		var btn = document.getElementById("btn");
+		
+		btn.onclick =function(){
+			var st = new Date().getTime();
+			
+			if (head.children[1].value==0||content.children[1].value==0) {
+				alert("不能为空");
+				return;
+			}
+			var mes =document.createElement("div");
+				mes.className="mes";
+			
+			var mes_1 =document.createElement("div");
+				mes_1.className="gray";
+
+			var mes_2 =document.createElement("div");
+				mes_2.className="white";
+
+			var del =document.createElement("a");
+				del.className="a";
+			var text1 =document.createTextNode("删除");
+			
+			del.appendChild(text1);
+			mes.appendChild(del);
+			mes.appendChild(mes_1);
+			mes.appendChild(mes_2);
+			wrap.appendChild(mes);
+			
+			mes_1.innerText=head.children[1].value;
+			mes_2.innerText=content.children[1].value;
+			var step=0;//用这个
+			var maxstep=30;//用这个
+			var start=0;//用这个
+			//获取高度
+			var end= mes.offsetHeight;
+			var change =end - start;//用这个
+			mes.style.height=Tween.Bounce.easeOut(step,start,change,maxstep)+"px";
+			mes.timer = setInterval(function(){
+				step++;
+				if (step>=maxstep) {
+					clearInterval(mes.timer);
+				}
+				mes.style.height=Tween.Bounce.easeOut(step,start,change,maxstep)+"px";
+			},30);	
+
+				
+			del.onclick=function(){
+				var step =0;
+				var maxstep =30;
+				var start = mes.offsetHeight;
+				var end = 0;
+				var change = -start;
+				mes.style.height=Tween.Bounce.easeOut(step,start,change,maxstep)+"px";
+				mes.timer = setInterval(function(){
+					step++;
+					if (step>=maxstep) {
+						wrap.removeChild(mes);
+						clearInterval(mes.timer);
+					}
+					mes.style.height=Tween.Bounce.easeOut(step,start,change,maxstep)+"px";
+					},30);	
+				
+			}
+		var et = new Date().getTime();
+		var z = (et-st)/1000;
+		console.log(z);
+		}
+
+	</script>
+</body>
+</html>
