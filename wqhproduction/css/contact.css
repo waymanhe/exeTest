@@ -1,0 +1,38 @@
+.content .message {    
+    bottom: -24px;
+    left: 0;
+}
+.contactus{
+	padding-left: 40px;
+	padding-top: 40px;
+	color: #B3916C;
+	font-size: 16px;
+	line-height: 25px;
+}
+.contactus h4{
+	padding-bottom: 10px;
+}
+.contactus a{
+	color: #B3916C;
+}
+.con_wrap{
+	height: 400px;
+	background-color: #313131;
+}
+
+@media screen and (max-width: 1650px){
+ 
+}
+@media screen and (max-width: 1245px){
+
+     
+}
+@media screen and (max-width: 980px){
+	.con_wrap{
+    	height: auto;
+    	padding-bottom: 40px;
+    	width: 95%;
+    	margin: auto;
+    }  
+    
+}

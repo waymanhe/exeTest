@@ -1,0 +1,14 @@
+.swiper-container {
+	padding-bottom: 24px;
+}
+
+
+.swiper-container-horizontal>.swiper-pagination {
+    bottom: 0px;
+}
+.swiper-pagination {
+	text-align: left;
+}
+.swiper-container img{
+	width: 100%;
+}

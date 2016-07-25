@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>意凡</title>
+	<link rel="stylesheet" href="css/reset.css">	
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<![endif]-->
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+	<div id="wrap" class="clear">
+		<div class="menu fl">
+			<a href="index.html"><img src="img/logo.png" class="img-responsive logo" alt="意凡logo"></a>
+			<ul class="menu_ul">
+				<li class="clear">
+					<a href="javascript:void(0)"><div class="link clear"><span class="fl">ABOUT US&nbsp;&nbsp;</span><span class="fr">关于我们</span></div></a>
+					<ul class="submenu">
+						<li class="btn_us"><a href="aboutus.html">擅长领域</a></li>
+						<li class="btn_us"><a href="aboutus2.html">设计理念</a></li>
+						<li class="btn_us"><a href="aboutus3.html">意凡的客户</a></li>
+						<li class="btn_us"><a href="aboutus4.html">新东方 与 ARTDECO</a></li>
+					</ul>
+				</li>
+				<li class="clear">
+					<a href="team.html"><div class="link sheji clear"><span class="fl">EVON TEAM&nbsp;&nbsp;</span><span class="fr">设计团队</span></div></a>
+					<ul class="submenu"></ul>
+				</li>
+				<li class="project clear">
+					<a href="javascript:void(0)"><div class="link clear"><span class="fl">PROJECT&nbsp;&nbsp;</span><span class="fr">项目案例</span></div></a>
+					<ul class="submenu">
+						<li class="btn_zoom"><a class="" href="project_commercial.html">商业空间</a></li>
+						<li><a href="project_hotel.html">酒店业</a></li>
+						<li><a href="project_office.html">企业办公空间</a></li>
+						<li><a href="project_estate.html">地产领域</a></li>
+					</ul>
+				</li>
+				<li class="clear">
+					<a href="contact.html"><div class="link lianxi clear"><span class="fl">CONTACT&nbsp;&nbsp;</span><span class="fr">联系我们</span></div></a>
+					<ul class="submenu"></ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="content fl">
+			<div class="con_wrap">
+			   	<!-- 关于我们 -->
+			   				<!-- TWO -->
+				<div  class="clear aboutus_wrap show">				
+					<div class="aboutus fl">
+						<h4 class="aboutus_title">设计理念</h4>
+						<div class="zh">							
+							<p>将文化的传承与技术的革新，作为意凡设计作品的灵魂和脊梁。</p>
+							<p>同时致力于推动本土文化和工艺的传承与新材料、科技的推广。</p>
+						</div>
+						<div class="en">								
+							<P>The Cultural heritage and technology, where the interior design & furnishing</P>
+							<P>is Evon to work as a soul and backbone.</P>
+							<P>Committed to promoting the heritage and new materials,</P>
+							<P>the promotion of science and technology of local culture and craftsmanship.</P>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				
+		   	    <span class="message">INTERIOR & FURNISHING DESIGN</span>			
+			</div>
+				
+		</div>
+	</div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<!--[if lt IE 9]>
+	<script src="js/idangerous.swiper.min.js"></script>
+<![endif]-->
+<script src="js/menu.js"></script>
+<script src="js/swiper.js"></script>
+<script type="text/javascript">	
+
+	// $(".submenu a").click(function() {
+	// 	var index = $(this).parent().index();
+	// 	$(".aboutus_wrap").hide();
+	// 	$(".aboutus_wrap").eq(index).show();		
+	// });
+	var $submenu = $(".submenu");
+	$submenu.eq(0).show();
+	$submenu.eq(0).parent().addClass("menu_li");
+	var $submenu_a=$(".submenu a");
+	$submenu_a.eq(1).addClass('li_a');	
+
+</script>
+</html>
