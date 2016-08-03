@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Document</title>
+<style>
+*{padding: 0;margin: 0;}
+html,body{width: 100%;height: 100%;}
+/*div{opacity: 0.8;-webkit-transform-style: preserve-3d;}*/
+#wrap{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  /*position: relative;*/
+}
+
+
+#div1{background-color: red;}
+#div2{background-color: blue;}
+#div3{background-color: yellow;}
+#div4{background-color: green;}
+#div5{background-color: black;}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="div1">adfad</div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+	<div id="div5"></div>
+</div>
+</body>
+
+<script type="text/javascript">
+
+	var wrap=document.getElementById("wrap");
+
+	wrap.onclick=function(){
+//		wrap.style.transition="5s";
+		wrap.style.webkitTransition="5s";
+		wrap.style.webkitTransform ="rotatex(80deg)";
+	}
+//	wrap.style.webkitPerspective=wrap.offsetHeight/2+"px";
+//	var speed=500;
+//	var bol=false;
+//	var movedeg=0;
+//	var y=0;
+//	var main=document.createElement("div");	
+//	main.style.width="100%";
+//	main.style.height="100%";
+//	main.style.position="relative";
+//	main.style.webkitTransform ="rotatex(0deg) translatez("+wrap.offsetHeight/-2+"px)";
+//	main.style.webkitTransformStyle="preserve-3d";
+//
+//	var cube=document.createElement("div");
+//	cube.style.width="100%";
+//	cube.style.height="100%";
+//	cube.style.webkitTransform ="rotatex(0deg)";
+//	cube.style.webkitTransformStyle="preserve-3d";
+//	cube.style.transition="0";
+//
+//	var n=wrap.children.length;
+//	for (var i = 0; i <n ; i++) {
+//		wrap.children[0].style.width="100%";
+//		wrap.children[0].style.height="100%";
+//		wrap.children[0].style.position="absolute";
+//		if (i==0) {wrap.children[0].style.webkitTransform ="rotatex(0deg) translatez("+wrap.offsetHeight/2+"px)"}
+//		else if(i==1){wrap.children[0].style.webkitTransform ="rotatex(90deg) translatez("+wrap.offsetHeight/-2+"px)"}
+//		else if(i==n-1){wrap.children[0].style.webkitTransform ="rotatex(90deg) translatez("+wrap.offsetHeight/2+"px)"}
+//		else{wrap.children[0].style.webkitTransform ="rotatex(0deg) translatez("+wrap.offsetHeight/-2+"px)"}		
+//
+//		cube.appendChild(wrap.children[0]);
+//	};	
+//	main.appendChild(cube);
+//	wrap.appendChild(main);	
+//
+//	function fnmove(){
+//		movedeg=Math.round((y-event.touches[0].screenY)/5);
+//		cube.style.webkitTransform ="rotatex("+movedeg+"deg)";				
+//		event.preventDefault();
+//	}
+//	wrap.addEventListener("touchstart", function (){	
+//		if(bol==true){this.removeEventListener("touchmove",fnmove,false);return}
+//		y=event.touches[0].screenY;
+//		if (event.touches.length==1){
+//			// alert(event.touches[0].screenX+","+event.touches[0].screenY);
+//			cube.style.transition="0s";			
+//			this.addEventListener("touchmove",fnmove,false);
+//		}		
+//	}, false);
+//
+//	wrap.addEventListener("touchend",function (){
+//		// alert(movedeg);		
+//		if(bol==true){return}
+//		if (movedeg>20) {
+//			bol=true;			
+//			cube.style.transition=speed+"ms";
+//			cube.style.webkitTransform ="rotatex(90deg)";
+//			setTimeout(function(){
+//				cube.appendChild(cube.children[0]);
+//				cube.style.transition="0s";
+//				cube.style.webkitTransform ="rotatex(0deg)";
+//				change();
+//				bol=false;
+//			},speed)
+//
+//		}
+//		else if(movedeg<-20){
+//			bol=true;
+//			cube.style.transition=speed+"ms";
+//			cube.style.webkitTransform ="rotatex(-90deg)";
+//			setTimeout(function(){
+//				cube.insertBefore(cube.children[cube.children.length-1],cube.children[0]);
+//				cube.style.transition="0s";
+//				cube.style.webkitTransform ="rotatex(0deg)";
+//				change();
+//				bol=false;
+//			},speed)
+//		}else{			
+//			cube.style.transition=speed+"ms";
+//			cube.style.webkitTransform ="rotatex(0deg)";
+//		}
+//		movedeg=0;
+//	},false);
+//
+//	function change() {
+////		alert(cube.children[0].id);
+//		for(var i=0;i<cube.children.length;i++){
+//			if (i==0) {cube.children[i].style.webkitTransform ="rotatex(0deg) translatez("+cube.offsetHeight/2+"px)"}
+//			else if(i==1){cube.children[i].style.webkitTransform ="rotatex(90deg) translatez("+cube.offsetHeight/-2+"px)"}
+//			else if(i==n-1){cube.children[i].style.webkitTransform ="rotatex(90deg) translatez("+cube.offsetHeight/2+"px)"}
+//			else{cube.children[i].style.webkitTransform ="rotatex(0deg) translatez("+cube.offsetHeight/-2+"px)"}		
+//		}
+//	}
+</script>
+</html>

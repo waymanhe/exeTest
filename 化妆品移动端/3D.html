@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>Document</title>
+<style>
+*{padding: 0;margin: 0;}
+html,body{width: 100%;height: 100%;}
+div{opacity: 0.8;-webkit-transform-style: preserve-3d;}
+#wrap{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /*background-color: red;*/
+  
+  -webkit-transform-style: preserve-3d;
+  
+  /*-webkit-animation-name: rotationMainContainer;*/
+  -webkit-animation-duration: 5s;
+  /*-webkit-perspective:200px;*/
+  -webkit-animation-iteration-count: infinite;
+  -webkit-perspective:300px;
+  -webkit-transform: rotateX(0deg);
+
+}
+
+#con{
+	position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 0px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+	-webkit-transform: rotatey(90deg);
+	
+}
+
+
+@-webkit-keyframes rotationMainContainer{
+  0%   { -webkit-transform: rotateX(0deg)}
+  100% { -webkit-transform: rotateX(90deg)}
+}
+#div1{background-color: red;width: 100%;height: 100%;position: absolute;-webkit-transform: rotatex(0deg);}
+#div2{background-color: blue;width:100%;height: 100%;position: absolute;-webkit-transform: rotatex(90deg) translatez(120px);}
+#div3{background-color: yellow;width: 100%;height: 100%;position: absolute;-webkit-transform: rotatex(90deg) translateZ(-120px);}
+#div4{background-color: green;width:100%;height: 100%;position: absolute;-webkit-transform:rotateX(0deg) translateZ(120px);}
+#div5{background-color: black;width:100%;height: 100%;position: absolute;-webkit-transform:rotateX(0deg) translateZ(-120px);}
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="con">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<div id="div4"></div>
+		<div id="div5"></div>
+	</div>
+</div>
+</body>
+<script type="text/javascript">
+	var con=document.getElementById("con");
+	con.style.webkitTransform ="rotatex(0deg)";
+	var d=0;
+	var t=-240;
+	var n=2.6;
+	// var timer=setInterval(function  () {
+	// 	d+=1;
+	// 	// t+=n;
+	// 	// if (d%90==0) {n*=-1};
+	// 	con.style.webkitTransform ="rotateX("+d+"deg) translateZ("+t+"px)";
+	// },100);
+</script>
+</html>
