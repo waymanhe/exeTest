@@ -15,7 +15,7 @@
 		top: 300px;
 		left: 3%;
 		font-size: 30px;
-		transform: rotateY(0deg) rotateX(0deg);
+		/*transform: rotateY(0deg) rotateX(0deg);*/
 	}
 	#square div{
 		width: 900px;
@@ -24,8 +24,7 @@
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		transition:5s;
-		opacity: 0.5;
+		/*opacity: 0.5;*/
 	}
 	#square div:nth-child(1){
 		background-color: coral;
@@ -66,22 +65,32 @@
 	var sQuare = document.getElementById("square");
 	// 判断手势上或下
 	function signal(sQuare){
-		var a,b,num=0;
+		var a,b,c=0,num=0;
 		document.addEventListener('touchstart',function(event){
 			a=event.touches[0].clientY;
 		},false);
 		document.addEventListener('touchmove',upAndDown,false);
 		function upAndDown(event){
 			//屏幕的高度
-			var w = document.documentElement.clientHeight;
-			b=(event.touches[0].clientY-a);
-			if (b%90==0) {
-				
-			};
+			var h = document.documentElement.clientHeight;
+			b=c+(event.touches[0].clientY-a)/h*90;
+			// if (b<0) {
+			// 	if (num==0) {
+			// 		var d=num*90;
+			// 		num++;
+			// 	}else{
+			// 		d=num*90;
+			// 	}
+			// }else{
+			// 	num--;
+			// 	d=num*90;
+			// }
 			
 			sQuare.style.transform="rotateX("+b+"deg)";
 		}
-		document.removeEventListener('touchend',upAndDown,false)
+		document.addEventListener('touchend',function(){
+			c=b;
+		},false)
 	}
 
 	signal(sQuare);
