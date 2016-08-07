@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	body{
+		perspective:13000px;
+	}
+	#square{
+		transform-style:preserve-3d;
+		width: 900px;
+		height: 900px;
+		position:absolute;
+		top: 300px;
+		left: 3%;
+		font-size: 30px;
+		transform: rotateY(0deg) rotateX(0deg);
+	}
+	#square div{
+		width: 900px;
+		height:900px;
+		text-align: center;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		transition:5s;
+		opacity: 0.5;
+	}
+	#square div:nth-child(1){
+		background-color: coral;
+		transform:rotateY(0deg) translateZ(450px)
+	}
+	#square div:nth-child(2){
+		background-color: blue;
+		transform:rotateY(0deg) translateZ(-450px);
+	}
+	#square div:nth-child(3){
+		background-color: green;
+		transform:rotateY(90deg) translateZ(450px);
+	}
+	#square div:nth-child(4){
+		background-color: yellow;
+		transform:rotateY(90deg) translateZ(-450px);
+	}
+	#square div:nth-child(5){
+		background-color: gray;
+		transform: rotateX(90deg) translateZ(450px);
+	}
+	#square div:nth-child(6){
+		background-color: purple;
+		transform: rotateX(90deg) translateZ(-450px);
+	}
+	</style>
+</head>
+<body>
+	<div id="square">
+		<div class="a">1</div>
+		<div class="b">2</div>
+		<div class="c">3</div>
+		<div class="d">4</div>
+		<div class="e">5</div>
+		<div class="f">6</div>
+	</div>
+	<script type="text/javascript">
+	var sQuare = document.getElementById("square");
+	// 判断手势上或下
+	function signal(sQuare){
+		var a,b,num=0;
+		document.addEventListener('touchstart',function(event){
+			a=event.touches[0].clientY;
+		},false);
+		document.addEventListener('touchmove',upAndDown,false);
+		function upAndDown(event){
+			//屏幕的高度
+			var w = document.documentElement.clientHeight;
+			b=(event.touches[0].clientY-a);
+			if (b%90==0) {
+				
+			};
+			
+			sQuare.style.transform="rotateX("+b+"deg)";
+		}
+		document.removeEventListener('touchend',upAndDown,false)
+	}
+
+	signal(sQuare);
+	
+	</script>
+</body>
+</html>
