@@ -83,6 +83,7 @@
 	background: url(../images/message.jpg) center;
 	margin: 0px auto;
 }
+
 #endscore,#bestscore{
 	color: white;
 	font-size: 30px;
@@ -93,6 +94,13 @@
 }
 #bestscore{
 	top: 125px;
+}
+#dog{
+	position: absolute;
+	top: 87px;
+	left: 60px;
+	border-radius: 50%;
+	width: 20%;
 }
 #ok{
 	width: 96px;
