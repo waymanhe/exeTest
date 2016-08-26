@@ -1,0 +1,124 @@
+/*=====
+    @Date:2016-05-16
+    @content:青岛
+	@author:林聪毅
+ =====*/
+.zt-wrap{width:100%; background:#fff; overflow: hidden;}
+.zt-con { width:968px; margin:0 auto; position:relative; }
+.zt-con a{ position:absolute;display:block;}
+.TsingTao-01{height:170px; background:url(../images/TsingTao-01.jpg) top center no-repeat;}
+.TsingTao-02{height:170px; background:url(../images/TsingTao-02.jpg) top center no-repeat;}
+.TsingTao-03{height:170px; background:url(../images/TsingTao-03.jpg) top center no-repeat;}
+.TsingTao-04{height:170px; background:url(../images/TsingTao-04.jpg) top center no-repeat;}
+.TsingTao-05{height:173px; background:url(../images/TsingTao-05.jpg) top center no-repeat;}
+.TsingTao-06{height:284px; background:url(../images/TsingTao-06.jpg) top center no-repeat;}
+.TsingTao-07{height:311px; background:url(../images/TsingTao-07.jpg) top center no-repeat;}
+.TsingTao-08{height:310px; background:url(../images/TsingTao-08.jpg) top center no-repeat;}
+.TsingTao-09{height:245px; background:url(../images/TsingTao-09.jpg) top center no-repeat;}
+.TsingTao-10{height:245px; background:url(../images/TsingTao-10.jpg) top center no-repeat;}
+
+.TsingTao-11{height:196px; background:url(../images/TsingTao-11.jpg) top center no-repeat;}
+.TsingTao-12{height:249px; background:url(../images/TsingTao-12.jpg) top center no-repeat;}
+.TsingTao-13{height:237px; background:url(../images/TsingTao-13.jpg) top center no-repeat;}
+.TsingTao-14{height:236px; background:url(../images/TsingTao-14.jpg) top center no-repeat;}
+.TsingTao-15{height:187px; background:url(../images/TsingTao-15.jpg) top center no-repeat;}
+.TsingTao-16{height:182px; background:url(../images/TsingTao-16.jpg) top center no-repeat;}
+.TsingTao-17{height:179px; background:url(../images/TsingTao-17.jpg) top center no-repeat;}
+.TsingTao-18{height:179px; background:url(../images/TsingTao-18.jpg) top center no-repeat;}
+.TsingTao-19{height:226px; background:url(../images/TsingTao-19.jpg) top center no-repeat;}
+.TsingTao-20{height:225px; background:url(../images/TsingTao-20.jpg) top center no-repeat;}
+
+.TsingTao-21{height:195px; background:url(../images/TsingTao-21.jpg) top center no-repeat;}
+.TsingTao-22{height:301px; background:url(../images/TsingTao-22.jpg) top center no-repeat;}
+.TsingTao-23{height:173px; background:url(../images/TsingTao-23.jpg) top center no-repeat;}
+.TsingTao-24{height:169px; background:url(../images/TsingTao-24.jpg) top center no-repeat;}
+.TsingTao-25{height:195px; background:url(../images/TsingTao-25.jpg) top center no-repeat;}
+.TsingTao-26{height:194px; background:url(../images/TsingTao-26.jpg) top center no-repeat;}
+.TsingTao-27{height:227px; background:url(../images/TsingTao-27.jpg) top center no-repeat;}
+.TsingTao-28{height:227px; background:url(../images/TsingTao-28.jpg) top center no-repeat;}
+.TsingTao-29{height:474px; background:url(../images/TsingTao-29.jpg) top center no-repeat;}
+
+.TsingTao-05 a{width: 138px; height: 43px; line-height: 43px; top: 60px; font-size: 26px; text-align: center; letter-spacing: 4px; font-weight: bold;}
+.TsingTao-05 .a1{left: 220px;}
+.TsingTao-05 .a1:hover{background: url(../images/hover.png) no-repeat; color: #000;}
+.TsingTao-05 .a2{left: 440px;}
+.TsingTao-05 .a2:hover{background: url(../images/hover.png) no-repeat; color: #000;}
+.TsingTao-05 .a3{left: 660px;}
+.TsingTao-05 .a3:hover{background: url(../images/hover.png) no-repeat; color: #000;}
+.TsingTao-07 a{width: 260px; height: 260px; top: 200px; opacity: 0;}
+.TsingTao-07 .a1{background: url(../images/foodstuff-01.png) no-repeat; left: 350px;}
+.TsingTao-07 .a2{background: url(../images/foodstuff-02.png) no-repeat; left: 700px;}
+
+.TsingTao-13 a{width: 313px; height: 313px; top: 10px; opacity: 0;}
+.TsingTao-13 .a1{background: url(../images/foodstuff-03.png) no-repeat; left: -60px;}
+.TsingTao-13 .a2{background: url(../images/foodstuff-04.png) no-repeat; left: 300px;}
+.TsingTao-13 .a3{background: url(../images/foodstuff-05.png) no-repeat; left: 660px;}
+.TsingTao-15 a{width: 230px; height: 320px; top: -6px;}
+.TsingTao-15 .a1{left: -26px;}
+.TsingTao-15 .a2{left: 234px;}
+.TsingTao-15 .a3{left: 496px;}
+.TsingTao-15 .a4{left: 756px;}
+.TsingTao-17 a{width: 230px; height: 320px; top: -6px;}
+.TsingTao-17 .a1{left: -26px;}
+.TsingTao-17 .a2{left: 234px;}
+.TsingTao-17 .a3{left: 496px;}
+.TsingTao-17 .a4{left: 756px;}
+.TsingTao-19 a{width: 230px; height: 320px; top: -6px;}
+.TsingTao-19 .a1{left: -26px;}
+.TsingTao-19 .a2{left: 234px;}
+.TsingTao-19 .a3{left: 496px;}
+.TsingTao-19 .a4{left: 756px;}
+
+.TsingTao-23 a{width: 250px; height: 270px; top: -6px;}
+.TsingTao-23 .a1{left: -40px;}
+.TsingTao-23 .a2{left: 214px;}
+.TsingTao-23 .a3{left: 468px;}
+.TsingTao-23 .a4{left: 726px;}
+.TsingTao-25 a{width: 250px; height: 300px; top: -6px;}
+.TsingTao-25 .a1{left: -40px;}
+.TsingTao-25 .a2{left: 214px;}
+.TsingTao-25 .a3{left: 468px;}
+.TsingTao-25 .a4{left: 726px;}
+.TsingTao-27 a{width: 300px; height: 280px; top: 0px;}
+.TsingTao-27 .a1{left: -30px;}
+.TsingTao-27 .a2{left: 320px;}
+.TsingTao-27 .a3{left: 700px;}
+.TsingTao-29 a{width: 100%; height: 100%; display: block;}
+.vedio{width: 640px; display: inline-block; margin-left: 80px; position: absolute; left: -120px; top: 40px;}
+.vedioBg{width: 510px; height: 400px; background: url(../images/vedioBg.png) no-repeat; position: absolute; left: 640px; top: 48px;}
+
+.TsingTao2-01{height:253px; background:url(../images/TsingTao2-01.jpg) top center no-repeat;}
+.TsingTao2-02{height:253px; background:url(../images/TsingTao2-02.jpg) top center no-repeat;}
+.TsingTao2-03{height:494px; background:url(../images/TsingTao2-03.jpg) top center no-repeat;}
+.TsingTao2-04{height:460px; background:url(../images/TsingTao2-04.jpg) top center no-repeat;}
+.TsingTao2-05{height:450px; background:url(../images/TsingTao2-05.jpg) top center no-repeat;}
+.TsingTao2-06{height:372px; background:url(../images/TsingTao2-06.jpg) top center no-repeat;}
+.TsingTao2-07{height:388px; background:url(../images/TsingTao2-07.jpg) top center no-repeat;}
+.TsingTao2-08{height:250px; background:url(../images/TsingTao2-08.jpg) top center no-repeat;}
+.TsingTao2-03 a{width: 200px; height: 380px; top: 76px;}
+.TsingTao2-03 .a1{left: -70px;}
+.TsingTao2-03 .a2{left: 238px;}
+.TsingTao2-03 .a3{left: 534px;}
+.TsingTao2-03 .a4{left: 834px;}
+.TsingTao2-04 a{width: 260px; height: 400px; top: 20px;}
+.TsingTao2-04 .a1{left: -100px;}
+.TsingTao2-04 .a2{left: 210px;}
+.TsingTao2-04 .a3{left: 500px;}
+.TsingTao2-04 .a4{left: 810px;}
+.TsingTao2-05 a{width: 260px; height: 400px; top: -10px;}
+.TsingTao2-05 .a1{left: -100px;}
+.TsingTao2-05 .a2{left: 210px;}
+.TsingTao2-05 .a3{left: 500px;}
+.TsingTao2-05 .a4{left: 810px;}
+.TsingTao2-06 a{width: 260px; height: 330px; top: 30px;}
+.TsingTao2-06 .a1{left: -100px;}
+.TsingTao2-06 .a2{left: 210px;}
+.TsingTao2-06 .a3{left: 500px;}
+.TsingTao2-06 .a4{left: 810px;}
+.TsingTao2-07 a{width: 260px; height: 330px; top: 20px;}
+.TsingTao2-07 .a1{left: -100px;}
+.TsingTao2-07 .a2{left: 210px;}
+.TsingTao2-07 .a3{left: 500px;}
+.TsingTao2-07 .a4{left: 810px;}
+.TsingTao2-08 a{width: 430px; height: 110px; top: 120px;}
+.TsingTao2-08 .a1{left: 270px;}

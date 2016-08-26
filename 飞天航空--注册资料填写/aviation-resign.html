@@ -1,0 +1,705 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="盖网,网上购物,网上商城,积分兑换,积分消费,手机,笔记本,电脑,数码,服装,手表,化妆品,保健品,盖象商城" />
+<meta name="Description" content="盖网,盖象商城-中国最大的网上购物及积分兑换消费商城，便捷，诚信的服务,为您提供愉悦的网上商城购物体验!" />
+<title>飞天航空</title>
+<link href="http://www.g-emall.com/css/global.css" rel="stylesheet" type="text/css" />
+<link href="http://www.g-emall.com/css/module.css" rel="stylesheet" type="text/css" />
+<link href="styles/zt.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://www.g-emall.com/js/jquery.gate.common.js" type="text/javascript"></script>
+<script src="http://www.g-emall.com/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/*头部广告位关闭*/
+		$("#topBanner .close").click(function(){
+			$("#topBanner").hide();
+		})
+		/*购物车列表*/	
+		$('#myCart').hover(function(){
+			$(this).find('.cartList').show();
+		},function(){
+			$(this).find('.cartList').delay(3000).hide();
+		});
+		/*菜单*/
+		$("#allMenu").hover(function(){
+			$("#menuList02").css('display','block');
+		},function(){
+			$("#menuList02").css('display','none');
+		})
+		$("#menuList02").hover(function(){
+			$(this).css('display','block');
+		},function(){
+			$(this).css('display','none');
+		})
+		
+		/*底部友情连接显示更多*/
+		$("#morefLinks").click(function(){
+			if($(this).hasClass('moreLinks')){
+				$(".friendsLinks").css("height","auto");
+				$(".friendsLinks").css("overflow"," ");
+				$("#morefLinks").removeClass("moreLinks").addClass("lessLinks");
+			}else{
+				$(".friendsLinks").css("height","20px");
+				$(".friendsLinks").css("overflow","hidden");
+				$("#morefLinks").removeClass("lessLinks").addClass("moreLinks");
+			}
+		})
+		
+		/*回到顶部*/
+		$("#backTop").click(function() {
+			$('body,html').stop().animate({scrollTop: 0}, 500);
+			return false;
+		});
+	})
+</script>
+
+</head>
+<body>
+<div class="wrap">
+   <div class="header">
+        <div class="guideWrap">
+            <div class="guideWel clearfix">
+				<div class="welcome fl">    
+                   想你了，欢迎来到盖象！&nbsp;&nbsp;<a title="请登录" href="#">请登录</a>&nbsp;&nbsp;<a href="#"  title="免费注册" target="_blank">免费注册</a>
+				</div>
+				<ul class="guide clearfix">
+					<li class="myCart" id="myCart"><i class="icon_v"></i>购物车6件
+						<div class="cartList" style="display:none;">
+							<div class="cartTit">最新加入的宝贝</div>
+							<div class="selectAll clearfix">
+								<input type="checkbox" value="" class="mr10"/>全选，共两件商品 
+								<a class="deleteAll" title="" href="#">删除</a>
+							</div>
+							
+							<table class="cartList_t">
+								<tbody><tr>
+									<td class="sel"><input type="checkbox" value="" /></td>
+									<td class="img"><a title="" href="#"><img src="../images/temp/pro58X58.jpg" alt="" /></a></td>
+									<td class="info">
+										<a title="" href="#" class="name">飞利浦(PHILIPS) 电吹风电吹风电吹风电吹风</a>
+										<p class="price">￥138.00 </p>
+										<div class="count clearfix">
+											<span class="icon_v sub"></span>
+											<input type="text" class="defCount" value="1" />
+											<span class="icon_v add"></span>
+										</div>
+									</td>
+									<td class="do"><a class="icon_v doDel" title="" href="#"></a></td>
+								</tr>
+								<tr class="last">
+									<td class="sel"><input type="checkbox" value="" /></td>
+									<td class="img"><a title="" href="#"><img src="../images/temp/pro58X58.jpg" alt="" /></a></td>
+									<td class="info">
+										<a title="" href="#" class="name">飞利浦(PHILIPS) 电吹风电吹风电吹风电吹风</a>
+										<p class="price">￥138.00 </p>
+										<div class="count clearfix">
+											<span class="icon_v sub"></span>
+											<input type="text" class="defCount" value="1" />
+											<span class="icon_v add"></span>
+										</div>
+									</td>
+									<td class="do"><a class="icon_v doDel" title="" href="#"></a></td>
+								</tr>
+							</tbody></table>
+							<div class="goPay">
+								<div class="clearfix">
+									<span class="totalPrice">¥138.00</span><span class="prodTot">共2件商品总计：</span>
+								</div>
+								<a class="goPayBtn" title="" href="#">&gt;去购物车结算</a>
+							</div>
+							<!--购物车为空-->
+							<div class="cartEmpty">
+								<div class="icon_v iconCartEmpty ">您的购物车是空的，赶紧去选购吧！</div>
+							</div>
+						</div>
+					</li>
+					<li class="icon_v myaccount"><a href="#">我的盖象</a></li>
+					<li class="business"><a href="#">商家入驻</a></li>
+					<li class="icon_v collect"><a href="#">收藏盖象</a></li>
+					<li class="language">
+						<select>
+							<option selected="selected" value="1">简体中文</option>
+							<option value="2">繁體中文</option>
+							<option value="3">English</option>
+						</select>
+					</li>
+					<li class="share">
+						<!-- Baidu Button BEGIN -->
+						<div id="bdshare" class="bdshare_b left" style="line-height:12px;">
+						<img src="http://bdimg.share.baidu.com/static/images/type-button-1.jpg?cdnversion=20120831" />
+						<a class="shareCount"></a>
+						</div>
+						<script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=6822010" ></script>
+						<script type="text/javascript" id="bdshell_js"></script>
+						<script type="text/javascript">
+						document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+						</script>
+						<!-- Baidu Button END -->
+					</li>
+				</ul>
+            </div>  
+       </div>
+     
+    	<div class="logoSearch w1200">
+             <div class="topBanner" id="topBanner">
+             	<a href="#" title="广告位" ><img alt="" src="http://www.g-emall.com/images/temp/ad1200X80.jpg" width="1200" height="80"/></a>
+				<i class="icon_v close"></i>
+             </div> 
+			 <div class="clearfix">
+				<a class="logo fl" href="#" title="盖网">
+					<img alt="盖网" src="http://www.g-emall.com/images/bgs/logo.png" width="215" height="85"/>
+				</a>
+				<div class="adbox fl">
+					<a href="#" title="广告位"><img alt="" src="http://www.g-emall.com/images/temp/ad300X110.jpg" width="300" height="110"/></a>
+				</div>
+				
+				<div class="search">
+                	<div class="searchBg clearfix">
+						<ul class="searchStore">
+							<li><a title="宝贝" href="#">宝贝<s class="icon_v"></s></a></li>
+							<li class="switch"><a title="店铺" href="#">店铺</a></li>
+						</ul>
+						<input type="text" class="textSearch" placeholder="search" value="" />
+						<input type="button" class="btnSearch" value="" />
+                    </div>
+                    <ul class="hitSearh clearfix">
+						<li>热门搜索：</li>
+						<li><a title="红包马上领" href="#">红包马上领</a></li>
+						<li><a title="平板电脑" href="#">平板电脑</a></li>
+						<li><a title="智能电视" href="#">智能电视</a></li>
+						<li><a title="平板电脑" href="#">情侣手表</a></li>
+						<li><a title="智能电视" href="#">三星S3</a></li>
+					</ul>
+                </div>
+				
+				<div class="gateWeixin">
+					<a title="" href="#"><img width="95" height="95" alt="微信二维码" src="http://www.g-emall.com/images/bgs/weixin.gif" /></a>
+					<p>关注微信</p>
+					<p>新品折扣一网打尽</p>
+                </div>
+			</div>
+        </div>
+        <div class="navWrap">
+			<div class="nav clearfix">
+				<div class="menu">
+					<span class="name" id="allMenu">首页/全部商品分类</span>
+					<ul class="menuList02 clearfix" id="menuList02" style="display:none; ">
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+					</ul>
+				
+				</div>
+				<ul class="navItems clearfix">
+					<li><a href="#" title="积分兑换" class="current">积分兑换</a></li>
+					<li><a href="#" title="线下服务">线下服务</a></li>
+					<li><a href="#" title="酒店预订">酒店预订</a></li>
+					<li><a href="#" title="最新专题">最新专题</a></li>
+					<li><a href="#" title="盖网通终端服务" class="icon_v gwt">盖网通终端服务</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="zt-wrap">			
+		<div class="aviation-resign-01">
+			<div class="zt-con">
+				<div class="resign-wrap">
+					<div class="form-group">
+						<input type="text" value="GW123456789" readonly/>
+						<input type="text" value="xxxxx12345" readonly/>
+						<a href="javascript:void(0)" class="btn verify">校验</a>
+					</div>
+					<div class="data-warp">
+						<div class="step">
+							<span>1</span>
+							<span class="contact_line"></span>
+							<a href="javascript:void(0)" class="icon"><i></i></a>
+							<div class="clear"></div>
+						</div>
+						<div class="form-group info-wrap">
+							<div class="fl customer_name">
+								<label>姓名</label>
+								<input type="text" placeholder="姓名">
+							</div>
+							<div class="fr customer_sex">
+								<label>性别</label>
+								<a href="javascript:void(0)" class="btn fl">男</a>
+								<a href="javascript:void(0)" class="btn fr">女</a>
+							</div>
+							<div class="clear"></div>
+							<div class="customer_id">
+								<label>身份证号码</label>
+								<input type="text" placeholder="440***************"/>
+							</div>
+							<div class="idCard idCard_1">
+								<label>身份证正面</label>
+								<div class="btn-group fl">
+									<a href="javascript:void(0)" class="btn uploadBtn fl">上传
+										<input type="file" name="photoimage" class="uploadImage"/>
+									</a>
+									<div class="img_preview"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="idCard idCard_2">
+								<label>身份证反面</label>
+								<div class="btn-group fl">
+									<a href="javascript:void(0)" class="btn fl uploadBtn">上传
+										<input type="file" name="photoimage" class="uploadImage"/>
+									</a>
+									<div class="img_preview"></div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="contacts">
+								<label>联系方式</label>
+								<input type="text" placeholder="电话号码"/>
+								<label>联系地址</label>
+								<input type="text" placeholder="具体地址"/>
+								<label>特殊说明</label>
+								<input type="text" placeholder="备注"/>
+							</div>
+						</div>
+					</div>
+					<div class="submit-group">
+						<a href="javascript:void(0)" class="btn submit_btn fl">提交</a>
+						<a href="javascript:void(0)" class="btn save_add fr">新增</a>
+						<div class="clear"></div>
+					</div>
+					<div class="clear">
+				</div>
+			</div>
+			<img src="images/aviation-resign.png"/ alt="飞天航空">
+		</div>
+		<div class="layer"></div>
+		<div class="error_tips">
+			<p>账户名或订单号不正确</p>
+			<p>如无法购买旅游产品</p>
+			<p>请到商城购买</p>
+			<a href="javascript:void(0)" class="btn go_buy">马上购</a>
+			<a href="javascript:void(0)" class="btn cancel">关闭</a>
+		</div>
+		<div class="success_tips">
+			<div class="success_logo"></div>
+			<p>已提交成功！</p>
+			<a href="javascript:void(0)" class="cancel">返回</a>
+		</div>
+	</div>   
+   <!--------------主体 End------------>
+   <!--底部 begin-->
+    <div class="footer">
+    	<div class="gwEnsure w1200 clearfix">
+			<div class="icon_v safeCert">
+				<p>安全认证</p>
+				<p class="en">Safety certification</p>
+			</div>
+			<div class="icon_v quaGoods">
+				<p>优质商品</p>
+				<p class="en">High quality goods</p>
+			</div>
+			<div class="icon_v perUpdate">
+				<p>周期更新</p>
+				<p class="en">Periodic updates</p>
+			</div>
+			<div class="icon_v fastDeli">
+				<p>快速送达</p>
+				<p class="en">Fast delivery</p>
+			</div>
+			<div class="icon_v service">
+				<p class="tel">400-883-882</p>
+				<p class="time">全国免费客服热线<br>
+				服务时间: 00:00-24:00</p>
+			</div>
+		</div>
+		<div class="gwHelp w1200 clearfix">
+			<dl>
+				<dt>新手指南</dt>
+				<dd><a href="#" title="">商家入驻</a></dd>
+				<dd><a href="#" title="">合作加盟</a></dd>
+				<dd><a href="#" title="">盖网终端机</a> </dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#" title="">购物流程</a></dd>
+				<dd><a href="#" title="">查询订单</a></dd>
+				<dd><a href="#" title="">付款方式</a> </dd>
+			</dl>
+			<dl>
+				<dt>积分说明</dt>
+				<dd><a href="#" title="">盖网积分</a></dd>
+				<dd><a href="#" title="">如何获取积分</a></dd>
+				<dd><a href="#" title="">如何使用积分</a></dd>
+			</dl>
+			<dl>
+				<dt>用户服务</dt>
+				<dd><a href="#" title="">用户注册 </a></dd>
+				<dd><a href="#" title="">找回密码</a></dd>
+				<dd><a href="#" title="">密码保护</a> </dd>
+			</dl>
+			<dl class="last">
+				<dt>商城服务</dt>
+				<dd><a href="#" title="">正品保障</a></dd>
+				<dd><a href="#" title="">广告服务</a></dd>
+				<dd><a href="#" title="">联系客服</a> </dd>
+			</dl>
+		</div>
+		
+		<div class="footLink">
+			<div class="gwLinks w1200">
+				<a href="#" title="">关于盖网</a>|
+				<a href="#" title="">帮助中心</a>|
+				<a href="#" title="">网站地图</a>|
+				<a href="#" title="">诚聘英才</a>|
+				<a href="#" title="">联系客服</a>|
+				<a href="#" title="">免责申明</a>
+			</div>
+			<div class="friendsLinks w1200">
+				<span>友情链接:</span>
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">合阳在</a>
+				<span class="icon_v_h moreLinks" id="morefLinks"></span>
+			</div>
+			<div class="copyRight w1200">Copyright©gatewang.com增值电信业务经营许可证：粤B2-20130649 粤ICP备13045334号-1</div>
+		</div>
+		
+    </div>
+</div>
+<div class="backTop">
+	<div class="bL">
+		<a href="javascript:void(0)" title="返回顶部" class="icon_v_h a1" id="backTop"></a>
+		<a href="#" title="联系客服" class="icon_v_h a2" target="_blank"></a>
+		<a href="#" title="查看购物车"class="icon_v_h a3"target="_blank"  ><span class="num" id="mian_botom_cartcount">1</span></a>
+	</div>
+</div>
+<!-- 返回顶部 end-->
+<script type="text/javascript">
+$(function(){
+	function contact_line(){
+		$('.contact_line').css({width:'100%'});
+		var oWidth = $('.contact_line').width();
+		$('.contact_line').css({width:oWidth-68});
+	}
+	contact_line();
+	$(window).resize(function(){
+		contact_line();
+	})
+	//性别选项
+	$(document).on('click','.customer_sex .btn',function(){
+		$(this).siblings().removeClass('active');
+		$(this).toggleClass('active');
+	})
+	//身份证缩略图
+	$(document).on("change",".uploadImage", function(){
+    // Get a reference to the fileList
+	    var files = !!this.files ? this.files : [];	 
+	    // If no files were selected, or no FileReader support, return
+	    if (!files.length || !window.FileReader) return; 
+	    // Only proceed if the selected file is an image
+	    if (/^image/.test( files[0].type)){ 
+	        // Create a new instance of the FileReader
+	        var reader = new FileReader(); 
+	        // Read the local file as a DataURL
+	        reader.readAsDataURL(files[0]);	 
+	        // When loaded, set image data as background of div
+	        var _this = $(this);
+	        reader.onloadend = function(){
+	       		_this.parent('.uploadBtn').siblings('.img_preview').css({"background-image":"url("+this.result+")","background-size":"100%"});        
+	        }	 
+	    }	 
+	})
+	//内容信息展开收起
+	$(document).on('click','.icon',function(){
+		//收起--展开
+		if($(this).hasClass('unfold')){
+			$('.icon').addClass('unfold');
+			$(this).removeClass('unfold');
+			$('.info-wrap').slideUp();
+			$(this).parents('.step').siblings('.info-wrap').slideDown();
+		}
+		//展开--收起
+		else{
+			//$('.icon').addClass('unfold');
+			$(this).addClass('unfold');
+			$(this).parents('.step').siblings('.info-wrap').slideUp();
+		}
+	})
+	//保存并添加
+	$(document).on('click','.save_add',function(){
+		$('.info-wrap').slideUp();
+		$('.icon').addClass('unfold');
+		var stepLen = $('.step').length;
+		var ohtml = 	'<div class="data-warp">'+
+							'<div class="step">'+
+								'<span>'+(++stepLen)+'</span>'+
+								'<span class="contact_line"></span>'+
+								'<a href="javascript:void(0)" class="icon"><i></i></a>'+
+								'<div class="clear"></div>'+
+							'</div>'+
+							'<div class="form-group info-wrap">'+
+								'<div class="fl customer_name">'+
+									'<label>姓名</label>'+
+									'<input type="text" placeholder="姓名">'+
+								'</div>'+
+								'<div class="fr customer_sex">'+
+									'<label>性别</label>'+
+									'<a href="javascript:void(0)" class="btn fl">男</a>'+
+									'<a href="javascript:void(0)" class="btn fr">女</a>'+
+								'</div>'+
+								'<div class="clear"></div>'+
+								'<div class="customer_id">'+
+									'<label>身份证号码</label>'+
+									'<input type="text" placeholder="440***************"/>'+
+								'</div>'+
+								'<div class="idCard idCard_1">'+
+									'<label>身份证正面</label>'+
+									'<div class="btn-group fl">'+
+										'<a href="javascript:void(0)" class="btn uploadBtn fl">上传'+
+											'<input type="file" name="photoimage" class="uploadImage"/>'+
+										'</a>'+
+										'<div class="img_preview"></div>'+
+									'</div>'+
+									'<div class="clear"></div>'+
+								'</div>'+
+								'<div class="idCard idCard_2">'+
+									'<label>身份证反面</label>'+
+									'<div class="btn-group fl">'+
+										'<a href="javascript:void(0)" class="btn fl uploadBtn">上传'+
+											'<input type="file" name="photoimage" class="uploadImage"/>'+
+										'</a>'+
+										'<div class="img_preview"></div>'+
+									'</div>'+
+									'<div class="clear"></div>'+
+								'</div>'+
+								'<div class="contacts">'+
+									'<label>联系方式</label>'+
+									'<input type="text" placeholder="电话号码"/>'+
+									'<label>联系地址</label>'+
+									'<input type="text" placeholder="具体地址"/>'+
+									'<label>特殊说明</label>'+
+									'<input type="text" placeholder="备注"/>'+
+								'</div>'+
+							'</div>'+
+						'</div>';
+		$('.submit-group').before(ohtml);
+		contact_line();
+	})
+	$('.data-warp').hide();
+	//校验按钮
+	var verifyOnOff = true;
+	$('.verify').click(function(){
+		if(!verifyOnOff){
+			$('.layer').show();
+			$('.error_tips').show();
+		}
+		else{
+			$('.data-warp').show();
+			$('.submit-group').show();
+		}
+	})
+	//错误提示--关闭
+	$('.error_tips .cancel').click(function(){
+		$('.error_tips').hide();
+		$('.layer').hide();
+	})
+	//提交按钮
+	$('.submit_btn').click(function(){
+		$('.layer').show();
+		$('.success_tips').show();
+	})
+	//提交成功--返回
+	$('.success_tips .cancel').click(function(){
+		$('.success_tips').hide();
+		$('.layer').hide();
+	})
+
+})
+</script>
+</body>
+</html>

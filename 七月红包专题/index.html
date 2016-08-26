@@ -1,0 +1,836 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="Keywords" content="盖网,网上购物,网上商城,积分兑换,积分消费,手机,笔记本,电脑,数码,服装,手表,化妆品,保健品,盖象商城">
+<meta name="Description" content="盖网,盖象商城-中国最大的网上购物及积分兑换消费商城，便捷，诚信的服务,为您提供愉悦的网上商城购物体验!">
+<title>七月红包</title>
+<link href="http://www.g-emall.com/css/global.css" rel="stylesheet" type="text/css">
+<link href="http://www.g-emall.com/css/module.css" rel="stylesheet" type="text/css">
+<link href="styles/zt.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="http://www.g-emall.com/js/jquery.gate.common.js" type="text/javascript"></script>
+<script src="http://www.g-emall.com/js/jquery.flexslider-min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		/*头部广告位关闭*/
+		$("#topBanner .close").click(function(){
+			$("#topBanner").hide();
+		})
+		/*购物车列表*/	
+		$('#myCart').hover(function(){
+			$(this).find('.cartList').show();
+		},function(){
+			$(this).find('.cartList').delay(3000).hide();
+		});
+		/*菜单*/
+		$("#allMenu").hover(function(){
+			$("#menuList02").css('display','block');
+		},function(){
+			$("#menuList02").css('display','none');
+		})
+		$("#menuList02").hover(function(){
+			$(this).css('display','block');
+		},function(){
+			$(this).css('display','none');
+		})
+		
+		/*底部友情连接显示更多*/
+		$("#morefLinks").click(function(){
+			if($(this).hasClass('moreLinks')){
+				$(".friendsLinks").css("height","auto");
+				$(".friendsLinks").css("overflow"," ");
+				$("#morefLinks").removeClass("moreLinks").addClass("lessLinks");
+			}else{
+				$(".friendsLinks").css("height","20px");
+				$(".friendsLinks").css("overflow","hidden");
+				$("#morefLinks").removeClass("lessLinks").addClass("moreLinks");
+			}
+		})
+		
+		
+	})
+</script>
+
+</head>
+<body>
+<div class="wrap">
+   <div class="header">
+        <div class="guideWrap">
+            <div class="guideWel clearfix">
+				<div class="welcome fl">    
+                   想你了，欢迎来到盖象！&nbsp;&nbsp;<a title="请登录" href="#">请登录</a>&nbsp;&nbsp;<a href="#" title="免费注册" target="_blank">免费注册</a>
+				</div>
+				<ul class="guide clearfix">
+					<li class="myCart" id="myCart"><i class="icon_v"></i>购物车6件
+						<div class="cartList" style="display:none;">
+							<div class="cartTit">最新加入的宝贝</div>
+							<div class="selectAll clearfix">
+								<input type="checkbox" value="" class="mr10">全选，共两件商品 
+								<a class="deleteAll" title="" href="#">删除</a>
+							</div>
+							
+							<table class="cartList_t">
+								<tbody><tr>
+									<td class="sel"><input type="checkbox" value=""></td>
+									<td class="img"><a title="" href="#"><img src="../images/temp/pro58X58.jpg" alt=""></a></td>
+									<td class="info">
+										<a title="" href="#" class="name">飞利浦(PHILIPS) 电吹风电吹风电吹风电吹风</a>
+										<p class="price">￥138.00 </p>
+										<div class="count clearfix">
+											<span class="icon_v sub"></span>
+											<input type="text" class="defCount" value="1">
+											<span class="icon_v add"></span>
+										</div>
+									</td>
+									<td class="do"><a class="icon_v doDel" title="" href="#"></a></td>
+								</tr>
+								<tr class="last">
+									<td class="sel"><input type="checkbox" value=""></td>
+									<td class="img"><a title="" href="#"><img src="../images/temp/pro58X58.jpg" alt=""></a></td>
+									<td class="info">
+										<a title="" href="#" class="name">飞利浦(PHILIPS) 电吹风电吹风电吹风电吹风</a>
+										<p class="price">￥138.00 </p>
+										<div class="count clearfix">
+											<span class="icon_v sub"></span>
+											<input type="text" class="defCount" value="1">
+											<span class="icon_v add"></span>
+										</div>
+									</td>
+									<td class="do"><a class="icon_v doDel" title="" href="#"></a></td>
+								</tr>
+							</tbody></table>
+							<div class="goPay">
+								<div class="clearfix">
+									<span class="totalPrice">¥138.00</span><span class="prodTot">共2件商品总计：</span>
+								</div>
+								<a class="goPayBtn" title="" href="#">&gt;去购物车结算</a>
+							</div>
+							<!--购物车为空-->
+							<div class="cartEmpty">
+								<div class="icon_v iconCartEmpty ">您的购物车是空的，赶紧去选购吧！</div>
+							</div>
+						</div>
+					</li>
+					<li class="icon_v myaccount"><a href="#">我的盖象</a></li>
+					<li class="business"><a href="#">商家入驻</a></li>
+					<li class="icon_v collect"><a href="#">收藏盖象</a></li>
+					<li class="language">
+						<select>
+							<option selected="selected" value="1">简体中文</option>
+							<option value="2">繁體中文</option>
+							<option value="3">English</option>
+						</select>
+					</li>
+					<li class="share">
+						<!-- Baidu Button BEGIN -->
+						<div id="bdshare" class="bdshare_b left" style="line-height:12px;">
+						<img src="http://bdimg.share.baidu.com/static/images/type-button-1.jpg?cdnversion=20120831">
+						<a class="shareCount"></a>
+						</div>
+						<script type="text/javascript" id="bdshare_js" data="type=button&amp;uid=6822010"></script>
+						<script type="text/javascript" id="bdshell_js"></script>
+						<script type="text/javascript">
+						document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000);
+						</script>
+						<!-- Baidu Button END -->
+					</li>
+				</ul>
+            </div>  
+       </div>
+     
+    	<div class="logoSearch w1200">
+             <div class="topBanner" id="topBanner">
+             	<a href="#" title="广告位"><img alt="" src="http://www.g-emall.com/images/temp/ad1200X80.jpg" width="1200" height="80"></a>
+				<i class="icon_v close"></i>
+             </div> 
+			 <div class="clearfix">
+				<a class="logo fl" href="#" title="盖网">
+					<img alt="盖网" src="http://www.g-emall.com/images/bgs/logo.png" width="215" height="85">
+				</a>
+				<div class="adbox fl">
+					<a href="#" title="广告位"><img alt="" src="http://www.g-emall.com/images/temp/ad300X110.jpg" width="300" height="110"></a>
+				</div>
+				
+				<div class="search">
+                	<div class="searchBg clearfix">
+						<ul class="searchStore">
+							<li><a title="宝贝" href="#">宝贝<s class="icon_v"></s></a></li>
+							<li class="switch"><a title="店铺" href="#">店铺</a></li>
+						</ul>
+						<input type="text" class="textSearch" placeholder="search" value="">
+						<input type="button" class="btnSearch" value="">
+                    </div>
+                    <ul class="hitSearh clearfix">
+						<li>热门搜索：</li>
+						<li><a title="红包马上领" href="#">红包马上领</a></li>
+						<li><a title="平板电脑" href="#">平板电脑</a></li>
+						<li><a title="智能电视" href="#">智能电视</a></li>
+						<li><a title="平板电脑" href="#">情侣手表</a></li>
+						<li><a title="智能电视" href="#">三星S3</a></li>
+					</ul>
+                </div>
+				
+				<div class="gateWeixin">
+					<a title="" href="#"><img width="95" height="95" alt="微信二维码" src="http://www.g-emall.com/images/bgs/weixin.gif"></a>
+					<p>关注微信</p>
+					<p>新品折扣一网打尽</p>
+                </div>
+			</div>
+        </div>
+        <div class="navWrap">
+			<div class="nav clearfix">
+				<div class="menu">
+					<span class="name" id="allMenu">首页/全部商品分类</span>
+					<ul class="menuList02 clearfix" id="menuList02" style="display:none; ">
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+						<li>
+							<h3><a href="#" target="_blank">家用电器</a></h3>
+							<div class="subItem clearfix">
+								<a href="#" title="大家电" target="_blank">大家电</a>  
+								<a href="#" title="日用小家电" target="_blank">日用小家电</a>  
+								<a href="#" title="厨房电器" target="_blank">厨房电器</a>  
+								<a href="#" title="个性护理" target="_blank">个性护理</a>  
+								<a href="#" title="健康电器" target="_blank">健康电器</a>
+								<a href="#" title="五金电器" target="_blank">五金电器</a> 
+								<a href="#" title="空气净化器" target="_blank">空气净化器</a>
+								<a href="#" title="生活电器" target="_blank">生活电器</a> 
+							</div>
+						</li>
+					</ul>
+				
+				</div>
+				<ul class="navItems clearfix">
+					<li><a href="#" title="积分兑换" class="current">积分兑换</a></li>
+					<li><a href="#" title="线下服务">线下服务</a></li>
+					<li><a href="#" title="酒店预订">酒店预订</a></li>
+					<li><a href="#" title="最新专题">最新专题</a></li>
+					<li><a href="#" title="盖网通终端服务" class="icon_v gwt">盖网通终端服务</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>	
+	
+	<div class="zt-wrap">			
+		<div class="discount-july-01">
+			<div class="zt-con">
+				<div class="newRegister"></div>
+			</div>
+		</div>
+		<div class="discount-july-02">
+			<div class="zt-con">
+				<div class="exciting"></div>
+			</div>
+		</div>
+		<div class="discount-july-03">
+			<div class="zt-con">
+				<a href="http://hongbao.g-emall.com/site/registerCoupon" class="a1 bounce" target="_blank"></a>
+				<a href="http://hongbao.g-emall.com/site/share" class="a2 bounce" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-04" id="part1">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/1842060.html" title="盘锦辽河谷 富硒大米 乾农原生态 盘锦蟹田大米1KG 【每人限购1KG】" class="a1" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-05" id="part2">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/1873265.html" title="盖象商城·生态盘锦·O2O体验馆 盘锦特色农家自产放养土鸡蛋 30枚" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1876224.html" title="大洼县田家镇承实食品商行 农家散养自制咸鸭蛋30枚装" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1876726.html" title="大洼县田家镇守丞名食品商行 农家放养双簧好蛋30枚" class="a3" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-06"></div>
+		<div class="discount-july-07" id="part3">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/1567380.html" title="2016俏丽町新款女装夏装休闲时尚气质三件套九分雪纺阔腿裤套装女夏" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/525058.html" title="(实拍) 夏季新款经典欧美风时尚百搭仿真丝背心" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1484010.html" title="【suLEE】男式牛仔裤直筒大码宽松休闲男装长裤子潮" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/773744.html" title="正品包邮 夏季中大女童米奇印花背带短裤+短袖T恤衫两件套装" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-08"></div>
+		<div class="discount-july-09">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/444666.html" title="卡琳狄高档拉丝无痕无钢圈女士内衣透气深V小胸厚聚拢型胸罩性感文胸" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/298960.html" title="【恒 源 祥】【恒源祥】高档丝滑莫代尔男士平脚裤 男式内裤 3条装礼盒装 G0107" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/966666.html" title="车载 长杆 手机支架 变形金刚 多功能伸缩 仪表台通用车载支架 自动锁" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1457845.html" title="6寸迷你风扇 超大风力办公静音小电风扇电脑桌面风扇学生" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-10" id="part4">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/1587333.html" title="2016俏丽町夏装新款复古印花短袖两件套时尚休闲阔腿短裤套装女潮" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1773151.html" title="2016夏新款女装气质两件套 韩版宽松条纹上衣阔腿裤休闲套装" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1056340.html" title="蕊斯2016新款大码女装肥MM蕾丝雪纺衫女1103" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1186589.html" title="2016短袖夏季新款通勤圆领复古刺绣显瘦女连衣裙8208" class="a4" target="_blank"></a>
+			</div>
+		</div>
+
+		<div class="discount-july-11"></div>
+		<div class="discount-july-12">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/1401494.html" title="新款连衣裙夏中长款学生韩版小清新短袖女装蕾丝修身一步裙7821" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1306760.html" title="正品 实拍 2016新款高腰休闲短裤A字裤 西装裤子大口袋白色阔腿裤" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1609065.html" title="实拍2016夏季女装雪纺天蓝色上衣+七分裤阔腿裤两件套套装" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1386015.html" title="2016俏丽町夏季新款女装韩版雪纺衬衫连衣裙夏装修身中长款印花套装裙子" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-13">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/1567091.html" title="2016俏丽町夏季新款女装棉麻连衣裙无袖印花亚麻裙子显瘦大摆度假长裙" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/788500.html" title="蕊斯2016新款中长款蕾丝短袖衬衫女6091" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1603468.html" title="夏季女装新款欧美时尚V领背心上衣+百搭阔腿裤套装女" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/788743.html" title="蕊斯2016新款韩版短袖雪纺衫女夏8833" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-14">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/510010.html" title="蕊斯2016新款韩版卡通纯棉家居服女8919" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/984055.html" title="慕兰欧瑜伽服 夏季撞色舞蹈品牌瑜珈服套装户外运动休闲健身衣裤" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/858846.html" title="夏季新品 男女童舒适休闲 鱼骨头背心套装 中小童套装" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/690828.html" title="正品包邮 2016新款男童短袖套装 纯棉短袖+牛仔裤两件套" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-15" id="part5">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/369120.html" title="【佰露集】佰露集胶原蛋白玻尿酸原液补水保湿面部精华液" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/272885.html" title="淳度护肤品 孕妇专用 清透滢亮隔离霜 防晒霜" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1513518.html" title="包邮 澳赞 马油嫩白补水面膜贴 靓肤蚕丝面膜5片" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1372726.html" title="森波拉嘉韵植物防脱洗发液油性发质 500ml 油性发质" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-16"></div>
+		<div class="discount-july-17">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/180715.html" title="【佰露集】【佰露集】蓝莓蚕丝面膜(补水、抗氧化、清爽平衡）  6片装" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/57795.html" title="韩国专柜正品 【大眼睛】韩国HERA赫拉限量版气垫bb霜粉饼防晒粉底液15g*2送替换芯 C21 C23 两色可选" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/472175.html" title="泊泉雅 墨菊深度补水面膜贴 30片超值装 春夏保湿控油去痘男女通用正品 BQY1204" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/369070.html" title="【佰露集】佰露集青春密码天才水爽肤水" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-18">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/531025.html" title="正品 韩婵 桂花眼贴眼膜贴80片 眼护理补水保湿去眼纹眼袋淡化细纹黑眼圈 HC8318" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1098483.html" title="诗黛尔 蓝宝石水润无瑕气垫BB霜 送替换装 隔离霜 遮瑕BB霜" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/65871.html" title="韩国专柜 3ce 三只眼小黑裙唇膏4g 十二色可选" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/151986.html" title="葵兰磁疗养肤冰膜春夏补水蚕丝面膜春夏补水美白靓白补水蚕丝面膜" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-19">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/471460.html" title="【泊泉雅】泊泉雅 芦荟修护套装5件套 补水保湿收缩毛孔控油化妆品正品 BQY2867" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/471945.html" title="【泊泉雅】泊泉雅 牛奶身体乳润肤露250ml 滋养嫩肤补水保湿控油去角质舒缓肌肤 BQY2232" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/323451.html" title="月如意亲肤日用" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/323478.html" title="月如意亲肤护垫" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-20" id="part6">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/1075353.html" title="新疆红枣夹核桃 地方特产特级散装休闲食品原味零食" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1384496.html" title="新疆特产长寿果 美味奶油味碧根果坚果食品健康休闲零食" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1410532.html" title="海南一级青柠檬新鲜水果3斤装排毒养颜饮品专供酸柠檬包邮" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/199740.html" title="【意久久199】【意久久】官方正品 蓝莓果粉无糖薄荷糖  无糖薄荷糖 零食糖果 果粉糖 无糖配方 戒烟糖" class="a4" target="_blank"></a>
+			</div>
+		</div>
+
+		<div class="discount-july-21"></div>
+		<div class="discount-july-22">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/908612.html" title="东北大米 黑龙江大米 稻花香大米5千克袋装" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1612780.html" title="【五常有机大米】东北大米20斤盘锦有机蟹田农家自产新米包邮" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/55804.html" title="2014新米 东北大米 王成功五常稻花香大米 一级品5KG" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/338181.html" title="【善耕原】善耕原SHANGENGYUAN有机石板米 黑龙江响水有机稻花香大米 2.5kg" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-23">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/903957.html" title="东北小米 黑龙江谷子 生态小米 黄小米 月子小米礼盒500克x6袋" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/189374.html" title="【龙门客栈】 黑木耳 秋木耳干货耳小碗磐家香土特产 肉厚味鲜 无根干木耳250g" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1596215.html" title="【雪域优品】雪域优品精选【青海藏香鸡 】雪域高原散养藏香鸡" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/57749.html" title="中粮可益康高钙蛋白质粉 送给爸妈最好礼物您健康我快乐！" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-24"></div>
+		<div class="discount-july-25">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/1384919.html" title="代餐粉 红豆薏米粉七天体验装200g" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/142617.html" title="纳豆红曲胶囊" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1134924.html" title="钙维生素D软胶囊(1000mg/粒x100粒/瓶x2瓶/盒）" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1563046.html" title="东阿阿胶 宜健源 木糖醇阿胶糕 500g开袋即食" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-26" id="part7">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/222556.html" title="包包2015新款 潮 女 欧美单肩手提女式包斜跨 牛皮包真皮女包潮流" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/721690.html" title="ZYA札雅品牌女包 韩版双肩包背包女学院风女士包包新款潮手提单肩三用女包" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/194805.html" title="女包2015夏款女士包包小香风单肩斜挎羊皮菱格链条包 真皮小方包" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/193970.html" title="流行女包2015夏款潮新款女士手提包包简约单肩包斜跨包大包大容量" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-27">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/943533.html" title="2016春夏款潮头层牛皮电脑包简约时尚双肩包正品牌真皮背包女包邮" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1168426.html" title="春季新款包包医生包简约时尚手提包流苏单肩包斜跨包女包晚宴包一件代发" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/313663.html" title="【丹顿仕包包】丹顿仕品牌新款男士长款钱包时尚商务手拿包真皮晚宴包头层牛皮手机包" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1029133.html" title="丹顿仕品牌新款休闲男包防水牛津布单肩包竖款男士斜挎包" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-28">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/733981.html" title="瑞士军刀双肩包电脑背包 双肩包商务礼品电脑包" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/193935.html" title="新款书包中学生男女双肩包学院风运动包休闲旅行包电脑背包韩版潮" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1600649.html" title="2016旅游男女防水运动登山背包 大容量户外旅行双肩包" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/325748.html" title="户外尖峰 新款韩版户外登山包男女双肩包防水透气休闲旅行背包" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-29">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/1573286.html" title="新品小学生书包 新款书包 女童双肩包" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/401211.html" title="【花花王子】高端品牌拉杆箱子 万向轮旅游旅行箱男女行李箱20/24寸密码箱登机箱" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1813143.html" title="FNBIRD新款行李箱热销日默瓦同款铝框万向轮拉杆箱行李箱登机箱旅行箱" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/524399.html" title="【优芬品牌包】优芬品牌　旅行旅游收纳袋6件套 防水出差收纳包 旅游行李箱衣服内衣整理包" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-30"></div>
+
+		<div class="discount-july-31" id="part8">
+			<div class="zt-con">
+				<div class="nav-horizontal">
+					<ul>
+						<li><a href="#part1"><i></i>红包秒杀</a></li>
+						<li><a href="#part2"><i></i>买一送一</a></li>
+						<li><a href="#part3"><i></i>热销Top8</a></li>
+						<li><a href="#part4"><i></i>服装鞋帽</a></li>
+						<li><a href="#part5"><i></i>个户化妆</a></li>
+						<li><a href="#part6"><i></i>食品饮料</a></li>
+						<li><a href="#part7"><i></i>箱包饰品</a></li>
+						<li><a href="#part8"><i></i>家居家装</a></li>
+						<div class="clear"></div>
+					</ul>
+				</div>
+				<a href="http://www.g-emall.com/JF/777245.html" title="西梦家纺 纯棉毛巾 全棉洗脸面巾 柔软吸水成人情侣款式毛巾 上市企业 可定制绣花" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/843405.html" title="双层全涤珊瑚绒婴儿毛毯" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1080009.html" title="【viplife】VIPLIFE高端新疆长绒棉夏被空调被专柜正品" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/585966.html" title="凯盛家纺 中药草本护颈枕 单人枕头 决明子薰衣草助眠枕芯 单只装 中药草本 护颈舒适 决明子填充 柔软舒适" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-32"></div>
+		<div class="discount-july-33">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/1055448.html" title="新生婴儿枕" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/461603.html" title="优质乳胶枕（厂家直销，代工OEM产品）" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1206843.html" title="慢悠品创意呆萌进口304不锈钢保温保冷杯（450ML大号）专柜正品" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/652506.html" title="多功能锅 电煎锅 电热锅 煎蛋煮蛋器  迷你蒸蛋器 魔法不粘锅 厂家直发" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-34">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/169275.html" title="{观陶} 陶瓷刀 厨房套刀三件套（木盒绸装）-带你步入健康环保之旅" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/71774.html" title="【已打6折】慢悠品 厨房用品 可伸缩沥水篮蔬菜水果沥水篮 水槽沥水架可伸缩水槽沥水篮" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/199329.html" title="【已打5.3折】慢悠品 厨房小工具12件套多功能切丁器沙拉切菜器土豆切丝切片" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/652720.html" title="加热 保温壶 1.8L 电热水壶 不锈钢保温瓶 半球品牌保证" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-35"></div>
+		<div class="discount-july-36">
+			<div class="zt-con">
+				<a href="http://www.g-emall.com/JF/242098.html" title="百年老檀盘香 单盘香薰4小时 纯正室内香熏香料 安神助眠盘香包邮" class="a1" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/244360.html" title="天然环保佛香立香 沉香檀香老山檀养生香四味可选 出口品质竹签香棒香贡香 微烟不烫手 一件包邮 礼佛佳品" class="a2" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/799987.html" title="WEIS唯诗喷鼻香月喷鼻香插逆流喷鼻香炉线喷鼻香盘喷鼻香家居喷鼻香薰" class="a3" target="_blank"></a>
+				<a href="http://www.g-emall.com/JF/1184581.html" title="景德镇陶瓷器 粉彩薄胎水点桃花天球瓶 中式酒柜摆件" class="a4" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-37"></div>
+		<div class="discount-july-38">
+			<div class="zt-con">
+				<a href="http://active.g-emall.com/festive/detail/207" class="a1" target="_blank"></a>
+			</div>
+		</div>
+		<div class="discount-july-39"></div>
+	</div>
+	<div class="nav-vertical">
+		<div class="nav-header"></div>
+		<ul>
+			<li><a href="#part1"><i></i>红包秒杀</a></li>
+			<li><a href="#part2"><i></i>买一送一</a></li>
+			<li><a href="#part3"><i></i>热销Top8</a></li>
+			<li><a href="#part4"><i></i>服装鞋帽</a></li>
+			<li><a href="#part5"><i></i>个户化妆</a></li>
+			<li><a href="#part6"><i></i>食品饮料</a></li>
+			<li><a href="#part7"><i></i>箱包饰品</a></li>
+			<li><a href="#part8"><i></i>家居家装</a></li>
+			<li><a href="javascript:void(0)" class="backToTop"><i></i>回到顶部</a></li>
+		</ul>
+	</div>
+   <!--------------主体 End------------>
+   <!--底部 begin-->
+    <div class="footer">
+    	<div class="gwEnsure w1200 clearfix">
+			<div class="icon_v safeCert">
+				<p>安全认证</p>
+				<p class="en">Safety certification</p>
+			</div>
+			<div class="icon_v quaGoods">
+				<p>优质商品</p>
+				<p class="en">High quality goods</p>
+			</div>
+			<div class="icon_v perUpdate">
+				<p>周期更新</p>
+				<p class="en">Periodic updates</p>
+			</div>
+			<div class="icon_v fastDeli">
+				<p>快速送达</p>
+				<p class="en">Fast delivery</p>
+			</div>
+			<div class="icon_v service">
+				<p class="tel">400-883-882</p>
+				<p class="time">全国免费客服热线<br>
+				服务时间: 00:00-24:00</p>
+			</div>
+		</div>
+		<div class="gwHelp w1200 clearfix">
+			<dl>
+				<dt>新手指南</dt>
+				<dd><a href="#" title="">商家入驻</a></dd>
+				<dd><a href="#" title="">合作加盟</a></dd>
+				<dd><a href="#" title="">盖网终端机</a> </dd>
+			</dl>
+			<dl>
+				<dt>购物指南</dt>
+				<dd><a href="#" title="">购物流程</a></dd>
+				<dd><a href="#" title="">查询订单</a></dd>
+				<dd><a href="#" title="">付款方式</a> </dd>
+			</dl>
+			<dl>
+				<dt>积分说明</dt>
+				<dd><a href="#" title="">盖网积分</a></dd>
+				<dd><a href="#" title="">如何获取积分</a></dd>
+				<dd><a href="#" title="">如何使用积分</a></dd>
+			</dl>
+			<dl>
+				<dt>用户服务</dt>
+				<dd><a href="#" title="">用户注册 </a></dd>
+				<dd><a href="#" title="">找回密码</a></dd>
+				<dd><a href="#" title="">密码保护</a> </dd>
+			</dl>
+			<dl class="last">
+				<dt>商城服务</dt>
+				<dd><a href="#" title="">正品保障</a></dd>
+				<dd><a href="#" title="">广告服务</a></dd>
+				<dd><a href="#" title="">联系客服</a> </dd>
+			</dl>
+		</div>
+		
+		<div class="footLink">
+			<div class="gwLinks w1200">
+				<a href="#" title="">关于盖网</a>|
+				<a href="#" title="">帮助中心</a>|
+				<a href="#" title="">网站地图</a>|
+				<a href="#" title="">诚聘英才</a>|
+				<a href="#" title="">联系客服</a>|
+				<a href="#" title="">免责申明</a>
+			</div>
+			<div class="friendsLinks w1200">
+				<span>友情链接:</span>
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">景德新闻网</a>|
+				<a href="#" title="">汽车人才网</a>|
+				<a href="#" title="">专门网</a>|
+				<a href="#" title="">平顶山人事人才网</a>|
+				<a href="#" title="">新丰台网</a>|
+				<a href="#" title="">郴州信息港</a>|
+				<a href="#" title="">合阳在</a>
+				<span class="icon_v_h moreLinks" id="morefLinks"></span>
+			</div>
+			<div class="copyRight w1200">Copyright©gatewang.com增值电信业务经营许可证：粤B2-20130649 粤ICP备13045334号-1</div>
+		</div>
+		
+    </div>
+</div>
+<div class="backTop">
+	<div class="bL">
+		<a href="javascript:void(0)" title="返回顶部" class="icon_v_h a1" id="backTop"></a>
+		<a href="#" title="联系客服" class="icon_v_h a2" target="_blank"></a>
+		<a href="#" title="查看购物车" class="icon_v_h a3" target="_blank"><span class="num" id="mian_botom_cartcount">1</span></a>
+	</div>
+</div>
+<!-- 返回顶部 end-->
+<script type="text/javascript">
+$(function(){
+	/*回到顶部*/
+	$("#backTop,.backToTop").click(function() {
+		$('body,html').stop().animate({scrollTop: 0}, 500);
+		return false;
+	});
+	var scrollTop = 0;
+	$(window).scroll(function(){
+		scrollTop = $(document).scrollTop();
+		if (scrollTop>=800) {
+			$('.nav-vertical').show();
+		}
+		else{
+			$('.nav-vertical').hide();
+		}
+	})
+})
+</script>
+</body>
+</html>
